@@ -7,6 +7,8 @@
 Works on Windows (and Linux, but not thoroughly tested), now you can configure your hardware and collect data!
 
 ## What's new?
+
+- 05/06/2023: Added Visual Studio 2022 support
 - 29/03/2022: Added a simple (6 lines of code) example for testing marker visibility
 - 29/09/2021: Added Visual Studio 2019 as a supported compiler
 - ??/??/2020: OAPI 3.16 compatibility (2020 was a bit of a blur)

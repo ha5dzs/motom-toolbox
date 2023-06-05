@@ -109,6 +109,16 @@ if(strcmp(compiler_info.Name, 'Microsoft Visual C++ 2019') && ~compiler_found)
     compiler_flags = '/O2 /Wall'; %Optimise binary for performance, and display everything in the command window.
 end
 
+%% Microsoft Visual C++ 2022
+% Just like before, with 2015, 2017, 2019 and now with 2022.
+if(strcmp(compiler_info.Name, 'Microsoft Visual C++ 2022') && ~compiler_found)
+    %if we got here, we have found our compiler.
+    compiler_found = 1;
+    %For each compiler and each version, different compiler flags are needed.
+    compiler_flags = '/O2 /Wall'; %Optimise binary for performance, and display everything in the command window.
+end
+
+
 %% g++
 %This is the standard Linux compiler. However, we need the old version.
 %Unfortunately, the version string stays empty (Ubuntu 18.04, Matlab R2018a)
