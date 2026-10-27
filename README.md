@@ -8,6 +8,13 @@ Works on Windows (and Linux, but not thoroughly tested), now you can configure y
 
 ## What's new?
 
+Notice: As of **December 31st 2026, Nortern Digital no longer supports the Optotrak Certus**.
+
+If, for some reason you are STILL using this device in 2027 onwards, and you do need the header and DLL files, please contact me. I might be able to point you to the right direction.
+Also note that if you are getting internal Optotrak errors, especially when you are using a newer system, you may want to check whether the DLL files have all dependencies satisfied with [Dependency Walker](https://dependencywalker.com/).
+In recent versions of Windows 11, Microsoft has dropped some legacy code that have been known to cause issues with the core Optotrak code.
+
+- 27/10/2026: Added Visual Studio 2026 support
 - 05/06/2023: Added Visual Studio 2022 support
 - 29/03/2022: Added a simple (6 lines of code) example for testing marker visibility
 - 29/09/2021: Added Visual Studio 2019 as a supported compiler
@@ -22,6 +29,7 @@ Works on Windows (and Linux, but not thoroughly tested), now you can configure y
 **Requirements:**
 
 This toolbox was developed using the following configuration. The more you deviate from it, and the more exotic hardware you want to use, the more likely you will run into problems.
+* **If using a fresh install of Windows 11 in 2026:** Microsoft Visual C++ 2010 runtime
 * Successfully installed the Optotrak drivers and software
 * Obtained a recent (3.14 or newer) version of the Optotrak API from NDI
 * Matlab R2017a or newer

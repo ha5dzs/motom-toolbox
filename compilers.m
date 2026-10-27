@@ -118,6 +118,15 @@ if(strcmp(compiler_info.Name, 'Microsoft Visual C++ 2022') && ~compiler_found)
     compiler_flags = '/O2 /Wall'; %Optimise binary for performance, and display everything in the command window.
 end
 
+%% Microsoft Visual C++ 2026
+% Are you REALLY using this with Visual Studio 2026?
+if(strcmp(compiler_info.Name, 'Microsoft Visual C++ 2026') && ~compiler_found)
+    %if we got here, we have found our compiler.
+    compiler_found = 1;
+    %For each compiler and each version, different compiler flags are needed.
+    compiler_flags = '/O2 /Wall'; %Optimise binary for performance, and display everything in the command window.
+end
+
 
 %% g++
 %This is the standard Linux compiler. However, we need the old version.
